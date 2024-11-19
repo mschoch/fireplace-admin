@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@fireproof/core':
-        specifier: 0.19.112-dev-usefp
-        version: 0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5)
+        specifier: 0.19.112
+        version: 0.19.112(react@18.3.1)(typescript@4.9.5)
       '@fireproof/partykit':
-        specifier: 0.19.112-dev-usefp
-        version: 0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5)
+        specifier: 0.19.112
+        version: 0.19.112(react@18.3.1)(typescript@4.9.5)
       '@fortawesome/fontawesome-svg-core':
         specifier: ^6.6.0
         version: 6.6.0
@@ -66,8 +66,8 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
       use-fireproof:
-        specifier: 0.19.112-dev-usefp
-        version: 0.19.112-dev-usefp(@fireproof/core@0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5))(react@18.3.1)(typescript@4.9.5)
+        specifier: 0.19.112
+        version: 0.19.112(@fireproof/core@0.19.112(react@18.3.1)(typescript@4.9.5))(react@18.3.1)(typescript@4.9.5)
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
@@ -1093,18 +1093,13 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fireproof/core@0.19.111':
-    resolution: {integrity: sha512-LJsXkGpMtDIvabX8YU24x33BV/oL1o6XdDAfbC2TpoRyNZ8pkqohibzHor+LFriMdRLtO2yqPkad2XnKgRZOqw==}
-    peerDependencies:
-      react: '>=18.0.0'
-
-  '@fireproof/core@0.19.112-dev-usefp':
-    resolution: {integrity: sha512-dZ4NU9tWk6DJA4bxMQFnbo5Z8dOAe5BNOdazZF8kVdlX9f6BW9HCMcwZpj7DGgrOxxUS6vK+nPVDXwksS60rJg==}
+  '@fireproof/core@0.19.112':
+    resolution: {integrity: sha512-vNWyVKhdPS6qt1DhzF6oU9qDMGnN1lQTtQoaYTsIGUS3zebMrI30h0vgU/ERFgibwdcCyHqNHBwfBI500KiZcg==}
     peerDependencies:
       react: ^18.3.1
 
-  '@fireproof/partykit@0.19.112-dev-usefp':
-    resolution: {integrity: sha512-TZSmxF2oEAtvfGe9SWk9rWXE76iUBsQqifzmUnkEjzexcjM7T9l3d+vm4F9mI9/Ffn6XRxcTvHzCvbdIdTe+og==}
+  '@fireproof/partykit@0.19.112':
+    resolution: {integrity: sha512-b/JbGkiYtSTVep++OyTMW7ccYnxgo0PNyyK8Smhh31oreWTgeH+ONGZp1qXuF32CjqriwcrMfYtttP6l7I5Qzw==}
 
   '@fortawesome/fontawesome-common-types@6.6.0':
     resolution: {integrity: sha512-xyX0X9mc0kyz9plIyryrRbl7ngsA9jz77mCZJsUkLl+ZKs0KWObgaEBoSgQiYWAsSmjz/yjl0F++Got0Mdp4Rw==}
@@ -2343,9 +2338,6 @@ packages:
   cosmiconfig@7.1.0:
     resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
     engines: {node: '>=10'}
-
-  cross-fetch@4.0.0:
-    resolution: {integrity: sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==}
 
   cross-spawn@7.0.5:
     resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
@@ -4210,15 +4202,6 @@ packages:
   no-case@3.0.4:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
 
-  node-fetch@2.7.0:
-    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
-    engines: {node: 4.x || >=6.0.0}
-    peerDependencies:
-      encoding: ^0.1.0
-    peerDependenciesMeta:
-      encoding:
-        optional: true
-
   node-forge@1.3.1:
     resolution: {integrity: sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==}
     engines: {node: '>= 6.13.0'}
@@ -5682,9 +5665,6 @@ packages:
     resolution: {integrity: sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==}
     engines: {node: '>=6'}
 
-  tr46@0.0.3:
-    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-
   tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
 
@@ -5849,10 +5829,10 @@ packages:
   url-parse@1.5.10:
     resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
 
-  use-fireproof@0.19.112-dev-usefp:
-    resolution: {integrity: sha512-v5uYpbEz8eEYlr7PVC7Xr23ZrkBAQAjrrVwGg6DcDlyYYLLj/ITBI7wggQnlTD9in8QPDlpr2Od719ee1vepBg==}
+  use-fireproof@0.19.112:
+    resolution: {integrity: sha512-g0H+7Lz4ODHozDGxsuUrqM9PIR3A5DwOqJyChdTfIG3W5LOW+1ZvZzXlH3EWWFa46+0GCugJbeDqsH2DyNEgvw==}
     peerDependencies:
-      '@fireproof/core': ^0.19.112-dev-usefp
+      '@fireproof/core': ^0.19.112
       react: ^18.3.1
 
   util-deprecate@1.0.2:
@@ -5903,9 +5883,6 @@ packages:
 
   web-vitals@2.1.4:
     resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
-
-  webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -5980,9 +5957,6 @@ packages:
 
   whatwg-mimetype@2.3.0:
     resolution: {integrity: sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==}
-
-  whatwg-url@5.0.0:
-    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
   whatwg-url@7.1.0:
     resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
@@ -6141,6 +6115,11 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
+  yaml@2.6.1:
+    resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
+    engines: {node: '>= 14'}
+    hasBin: true
+
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -6173,7 +6152,7 @@ snapshots:
   '@adviser/cement@0.2.36(typescript@4.9.5)':
     dependencies:
       ts-essentials: 10.0.3(typescript@4.9.5)
-      yaml: 2.6.0
+      yaml: 2.6.1
     transitivePeerDependencies:
       - typescript
 
@@ -7285,7 +7264,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fireproof/core@0.19.111(react@18.3.1)(typescript@4.9.5)':
+  '@fireproof/core@0.19.112(react@18.3.1)(typescript@4.9.5)':
     dependencies:
       '@adviser/cement': 0.2.36(typescript@4.9.5)
       '@ipld/car': 5.3.3
@@ -7307,36 +7286,12 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@fireproof/core@0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5)':
+  '@fireproof/partykit@0.19.112(react@18.3.1)(typescript@4.9.5)':
     dependencies:
-      '@adviser/cement': 0.2.36(typescript@4.9.5)
-      '@ipld/car': 5.3.3
-      '@ipld/dag-cbor': 9.2.2
-      '@ipld/dag-json': 10.2.3
-      '@ipld/unixfs': 3.0.0
-      '@web3-storage/pail': 0.6.0
-      cborg: 4.2.6
-      charwise: 3.0.1
-      idb: 8.0.0
-      ipfs-unixfs-exporter: 13.6.1
-      memfs: 4.14.0
-      multiformats: 13.3.1
-      p-limit: 6.1.0
-      p-map: 7.0.2
-      p-retry: 6.2.1
-      prolly-trees: 1.0.4
-      react: 18.3.1
-    transitivePeerDependencies:
-      - typescript
-
-  '@fireproof/partykit@0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5)':
-    dependencies:
-      '@fireproof/core': 0.19.111(react@18.3.1)(typescript@4.9.5)
-      cross-fetch: 4.0.0
+      '@fireproof/core': 0.19.112(react@18.3.1)(typescript@4.9.5)
       partykit: 0.0.111
     transitivePeerDependencies:
       - bufferutil
-      - encoding
       - react
       - supports-color
       - typescript
@@ -8884,12 +8839,6 @@ snapshots:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-
-  cross-fetch@4.0.0:
-    dependencies:
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
 
   cross-spawn@7.0.5:
     dependencies:
@@ -11211,10 +11160,6 @@ snapshots:
       lower-case: 2.0.2
       tslib: 2.8.1
 
-  node-fetch@2.7.0:
-    dependencies:
-      whatwg-url: 5.0.0
-
   node-forge@1.3.1: {}
 
   node-int64@0.4.0: {}
@@ -12864,8 +12809,6 @@ snapshots:
       universalify: 0.2.0
       url-parse: 1.5.10
 
-  tr46@0.0.3: {}
-
   tr46@1.0.1:
     dependencies:
       punycode: 2.3.1
@@ -13027,10 +12970,10 @@ snapshots:
       querystringify: 2.2.0
       requires-port: 1.0.0
 
-  use-fireproof@0.19.112-dev-usefp(@fireproof/core@0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5))(react@18.3.1)(typescript@4.9.5):
+  use-fireproof@0.19.112(@fireproof/core@0.19.112(react@18.3.1)(typescript@4.9.5))(react@18.3.1)(typescript@4.9.5):
     dependencies:
       '@adviser/cement': 0.2.36(typescript@4.9.5)
-      '@fireproof/core': 0.19.112-dev-usefp(react@18.3.1)(typescript@4.9.5)
+      '@fireproof/core': 0.19.112(react@18.3.1)(typescript@4.9.5)
       '@ipld/car': 5.3.3
       '@ipld/unixfs': 3.0.0
       '@web3-storage/pail': 0.6.0
@@ -13094,8 +13037,6 @@ snapshots:
       minimalistic-assert: 1.0.1
 
   web-vitals@2.1.4: {}
-
-  webidl-conversions@3.0.1: {}
 
   webidl-conversions@4.0.2: {}
 
@@ -13215,11 +13156,6 @@ snapshots:
   whatwg-fetch@3.6.20: {}
 
   whatwg-mimetype@2.3.0: {}
-
-  whatwg-url@5.0.0:
-    dependencies:
-      tr46: 0.0.3
-      webidl-conversions: 3.0.1
 
   whatwg-url@7.1.0:
     dependencies:
@@ -13450,6 +13386,8 @@ snapshots:
   yaml@1.10.2: {}
 
   yaml@2.6.0: {}
+
+  yaml@2.6.1: {}
 
   yargs-parser@20.2.9: {}
 

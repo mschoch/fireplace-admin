@@ -19,7 +19,7 @@ export function Database() {
     // }
     // connect.aws(database, s3conf);
 
-    cx = connect(database, '', 'https://' + window.location.hostname);
+    const cx = connect(database, '', 'https://' + window.location.hostname);
     console.log("connected", cx);
 
 
