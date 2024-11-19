@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { useFireproof } from 'use-fireproof'
-import { connect } from "@fireproof/aws";
+import { connect } from "@fireproof/partykit";
 import {Link, useParams} from 'react-router-dom'
 import React, { useEffect, useState } from "react";
 
@@ -13,12 +13,15 @@ export function Document() {
     const { database} = useFireproof(name)
     const [docContent, setDocContent] = useState('');
 
-    const s3conf = {
-        upload: "https://" + window.location.hostname + '/api/upload',
-        download: "https://" + window.location.hostname + '/api/download/',
-        websocket: "wss://" + window.location.hostname + '/api/websocket'
-    }
-    connect.aws(database, s3conf);
+    // const s3conf = {
+    //     upload: "https://" + window.location.hostname + '/api/upload',
+    //     download: "https://" + window.location.hostname + '/api/download/',
+    //     websocket: "wss://" + window.location.hostname + '/api/websocket'
+    // }
+    // connect.aws(database, s3conf);
+
+    cx = connect(database, '', 'https://' + window.location.hostname);
+    console.log("connected", cx);
 
 
     useEffect(() => {

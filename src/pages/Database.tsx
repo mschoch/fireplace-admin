@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { useFireproof } from 'use-fireproof'
-import { connect } from "@fireproof/aws";
+import { connect } from "@fireproof/partykit";
 import {Link, useParams} from 'react-router-dom'
 import React from "react";
 
@@ -12,12 +12,15 @@ export function Database() {
     const { name } = useParams()
     const { database, useLiveQuery } = useFireproof(name)
 
-    const s3conf = {
-        upload: "https://" + window.location.hostname + '/api/upload',
-        download: "https://" + window.location.hostname + '/api/download/',
-        websocket: "wss://" + window.location.hostname + '/api/websocket'
-    }
-    connect.aws(database, s3conf);
+    // const s3conf = {
+    //     upload: "https://" + window.location.hostname + '/api/upload',
+    //     download: "https://" + window.location.hostname + '/api/download/',
+    //     websocket: "wss://" + window.location.hostname + '/api/websocket'
+    // }
+    // connect.aws(database, s3conf);
+
+    cx = connect(database, '', 'https://' + window.location.hostname);
+    console.log("connected", cx);
 
 
     const docs = useLiveQuery(
