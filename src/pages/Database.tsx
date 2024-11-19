@@ -12,13 +12,6 @@ export function Database() {
     const { name } = useParams()
     const { database, useLiveQuery } = useFireproof(name)
 
-    // const s3conf = {
-    //     upload: "https://" + window.location.hostname + '/api/upload',
-    //     download: "https://" + window.location.hostname + '/api/download/',
-    //     websocket: "wss://" + window.location.hostname + '/api/websocket'
-    // }
-    // connect.aws(database, s3conf);
-
     const cx = connect(database, '', 'https://' + window.location.hostname);
     console.log("connected", cx);
 

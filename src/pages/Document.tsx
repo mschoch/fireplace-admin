@@ -13,12 +13,6 @@ export function Document() {
     const { database} = useFireproof(name)
     const [docContent, setDocContent] = useState('');
 
-    // const s3conf = {
-    //     upload: "https://" + window.location.hostname + '/api/upload',
-    //     download: "https://" + window.location.hostname + '/api/download/',
-    //     websocket: "wss://" + window.location.hostname + '/api/websocket'
-    // }
-    // connect.aws(database, s3conf);
 
     const cx = connect(database, '', 'https://' + window.location.hostname);
     console.log("connected", cx);
