@@ -13,9 +13,23 @@ export function Document() {
     const { database} = useFireproof(name)
     const [docContent, setDocContent] = useState('');
 
+    const [actuallyReady, setActuallyReady] = useState(false);
+
 
     const cx = connect(database, '', 'https://' + window.location.hostname);
-    console.log("connected", cx);
+    cx.loader?.ready().then(value => {
+        cx.loader?.remoteMetaStore?.load().then(value1 => {
+            setActuallyReady(true);
+            console.log("connected", cx);
+        })
+    })
+
+    // cx.loaded.then(value => {
+    //     window.setTimeout(args => {
+    //         setActuallyReady(true);
+    //         console.log("connected", cx);
+    //     }, 5000)
+    // })
 
 
     useEffect(() => {
@@ -24,7 +38,7 @@ export function Document() {
             setDocContent(JSON.stringify(doc, null, 4))
         }
         fetchItem()
-    }, [docID, database])
+    }, [actuallyReady])
 
     return (
         <section>
